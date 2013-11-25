@@ -34,5 +34,6 @@ data.ex3                                      #show the data
 aov.ex3 = aov(Recall~Valence+Error(Subject/Valence),data.ex3)
 summary(aov.ex3)
 #
+
 print(model.tables(aov.ex3,"means"),digits=3)       #report the means and the number of subjects/cell
 boxplot(Recall~Valence,data=data.ex3)          #graphical output
