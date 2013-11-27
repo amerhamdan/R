@@ -51,6 +51,16 @@ hist(residuos)
 
 predito = fitted.values(modelo)
 predito
-
 plot (predito, residuos)
+
+# Análise gráfica do modelo
 plot(modelo)
+par(mfrow=c(2,2))
+plot(m1)
+
+# Apresenta 4 gráficos:
+# O primeiro, analisa a variabilidade dos dados;
+# O segundo, a normalidade dos dados;
+# O terceiro, o resíduo padronizado (ideal é estar dentro de -3 a +3);
+# O quarto, você terá a distância de Cook junto com os leverages, aonde os pontos
+#       localizados acima de 1 nas retas são considerados outliers.
