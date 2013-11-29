@@ -146,6 +146,7 @@ ls()
 objects()
 rm(q)
 ls()
+rm(list=ls()) #remove all
 ###########################
 #editing data objetcts
 x<-c(3,1,3,5,12,3,12,1,2,3,5,7,3,1,3)
